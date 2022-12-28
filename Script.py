@@ -1,20 +1,72 @@
 class script(object):
     START_TXT = """<b>𝙷𝙴𝙻𝙾 {},
-𝕄𝕐 ℕ𝔸𝕄𝔼 ℂ𝔸𝕄𝔼 𝕋𝕆 𝔹𝔼 𝕂ℕ𝕆𝕎ℕ 𝔸𝕊 <a href=https://t.me/{}>{}</a>,𝕀 ℂ𝔸ℕ ℙℝ𝕆𝕍𝕀𝔻𝔼 𝔸 𝕃𝕆𝕋 𝕆𝔽 𝕄𝕆𝕍𝕀𝔼𝕊 𝕋𝕆 𝕐𝕆𝕌 , 𝕁𝕌𝕊𝕋 𝔸𝔻𝔻 𝕄𝔼 𝕋𝕆 𝕐𝕆𝕌ℝ 𝔾ℝ𝕆𝕌ℙ 𝔸𝕊 𝔸𝔻𝕄𝕀ℕ 𝕋ℍ𝔼ℕ 𝕊𝔼𝔼 𝕄𝕐 ℙ𝕆𝕋𝔼ℕ𝕋𝕀𝔸𝕃 𝔸𝔹𝕀𝕃𝕀𝕋𝕐 🔥</b>"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴: ᎷᎡ.ᏞᏆᏞᏞᎽ</b>
-<b>✮ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/doctor6689>ᏦᎪᎷᎪᏞᎪᏦᎪΝΝᎪΝ</a></b>
-<b>✮ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: ᏢᎽᎡϴᏀᎡᎪᎷ</b>
-<b>✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: ᏢᎽͲᎻϴΝ (ᎫᎪᏙᎪ ᏴᎪՏᎬᎠ)</b>
-<b>✮ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: ᎷϴΝᏀϴ-ᎠᏴ</b>
-<b>✮ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: ᎡᎪᏆᏞᏔᎪᎽ</b>
-<b>✮ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅1.0.43</b>
-<b>✮ 𝙶𝚁𝙾𝚄𝙿𝚂: <a href=https://t.me/firstshowers>ҒᏆᎡՏͲՏᎻϴᏔᎬᎡՏ🎥</a></b>"""
+𝕄𝕐 ℕ𝔸𝕄𝔼 ℂ𝔸𝕄𝔼 𝕋𝕆 𝔹𝔼 𝕂ℕ𝕆𝕎 𝔸𝕊 <a href=https://t.me/{}>{}</a>,𝕀 ℂ𝔸ℕ ℙℝ𝕆𝕍𝕀𝔻𝔼 𝔸 𝕃𝕆𝕋 𝕆𝔽 𝕄𝕆𝕍𝕀𝔼𝕊 𝕋𝕆 𝕐𝕆𝕌,𝕁𝕌𝕊𝕋 𝔸𝔻𝔻 𝕄𝔼 𝕋𝕆 𝕐𝕆𝕌ℝ 𝔾ℝ𝕆𝕌ℙ 𝔸𝕊 𝔸𝔻𝕄𝕀ℕ ,𝕋ℍ𝔼ℕ 𝕊𝔼𝔼 𝕄𝕐 ℙ𝕆𝕋𝔼ℕ𝕋𝕀𝔸𝕃 𝔸𝔹𝕀𝕃𝕀𝕋𝕐 🔥</b>"""
+    COMMANDS_TXT = """𝙷𝙴𝚈 {}
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+    ABOUT_TXT = """<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}</b>
+<b>✮ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁: <a href=https://t.me/doctor6689>🎀ᎠϴᏟͲϴᎡ 🎀</a></b>
+<b>✮ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</b>
+<b>✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</b>
+<b>✮ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾-𝙳𝙱</b>
+<b>✮ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄</b>
+<b>✮ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: 𝚅3.0</b>
+<b>✮ 𝙶𝚁𝙾𝚄𝙿: <a href=https://t.me/firstshowers>ҒᏆᎡՏͲՏᎻϴᏔᎬᎡՏ🎥</a></b>"""
+    F_TXT = """ᏢᎪᏀᎬ Νϴ 3📰"""
+    E_TXT = """ᏢᎪᏀᎬ Νϴ 2 📰"""
+    FONT_TXT = """<b>𝚂𝚃𝚈𝙻𝙸𝚂𝙷 𝙵𝙾𝙽𝚃 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+    
+    <b>𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝙲𝙰𝙽 𝙶𝙸𝚅𝙴 𝚂𝚃𝚈𝙻𝙸𝚂𝙷 𝚃𝙴𝚇𝚃📜</b>
+      <b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳</b>
+      /font <𝚃𝙴𝚇𝚃>"""
+    PASSGEN_TXT = """<b>𝙿𝙰𝚂𝚂𝚆𝙾𝚁𝙳-𝙶𝙴𝙽 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+  𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝙲𝙰𝙽 𝙶𝙴𝙽 𝙿𝙰𝚂𝚂𝚆𝙾𝚁𝙳
+     <b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳</b>
+   /genpw 𝚘𝚛 /genpassword"""
 
+    SHARETXT_TXT = """𝙷𝚎𝚕𝚙: <𝚋>𝚂𝚑𝚊𝚛𝚒𝚗𝚐 𝚃𝚎𝚡𝚝 𝙼𝚊𝚔𝚎𝚛𝚊 𝚋𝚘𝚝 𝚝𝚘 𝚌𝚛𝚎𝚊𝚝𝚎 𝚊 𝚕𝚒𝚗𝚔 𝚝𝚘 𝚜𝚑𝚊𝚛𝚎 𝚝𝚎𝚡𝚝 𝚒𝚗 𝚝𝚑𝚎 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖.
+<𝚋>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:• /𝚜𝚑𝚊𝚛𝚎 (𝚝𝚎𝚡𝚝 𝚘𝚛 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚖𝚎𝚜𝚜𝚊𝚐𝚎)
+
+<𝚋>𝙽𝙾𝚃𝙴:
+• lilly 𝚜𝚑𝚘𝚞𝚕𝚍 𝚑𝚊𝚟𝚎 𝚊𝚍𝚖𝚒𝚗 𝚙𝚛𝚒𝚟𝚒𝚕𝚕𝚊𝚐𝚎.
+• 𝚃𝚑𝚎𝚜𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚠𝚘𝚛𝚔𝚜 𝚘𝚗 𝚋𝚘𝚝𝚑 𝚙𝚖 𝚊𝚗𝚍 𝚐𝚛𝚘𝚞𝚙.
+• 𝚃𝚑𝚎𝚜𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚌𝚊𝚗 𝚋𝚎 𝚞𝚜𝚎𝚍 𝚋𝚢 𝚊𝚗𝚢 𝚐𝚛𝚘𝚞𝚙 𝚖𝚎𝚖𝚋𝚎𝚛."""
+
+    SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚂𝙾𝙽𝙶 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂../</b>
+<b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
+››  /song or /music or /mp3 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴"""
+
+    SHAZAM_TXT = """<b>𝚂𝙷𝙰𝚉𝙰𝙼 𝙼𝚄𝚂𝙸𝙲 𝙵𝙾𝚄𝙽𝙳𝙴𝚁 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+- <b>𝙷𝙴𝙿𝙻=</b> 𝙷𝙴𝙻𝙿𝚂 𝚈𝙾𝚄 𝚃𝙾 𝚁𝙴𝙲𝙾𝙶𝙽𝙸𝚉𝙴 | 𝙳𝙸𝚂𝙲𝙾𝚅𝙴𝚁 𝙰 𝚂𝙾𝙽𝙶
+- <b>𝚄𝚂=</b> 𝚂𝙴𝙽𝙳 /Shazam (𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝚂𝙾𝙽𝙶 𝙵𝙸𝙻𝙴)
+
+<b>𝚆𝙷𝙰𝚃'𝚜 𝚃𝙷𝙴 𝚄𝚂𝙴</b>
+- 𝙳𝙾 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙺𝙽𝙾𝚆 𝙰 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 𝚂𝙾 𝚈𝙾𝚄 𝙲𝙰𝙽 𝙷𝙴𝙰𝚁 𝙸𝚃 
+𝙳𝙾𝙽'𝚝 𝚆𝙾𝚁𝚁𝚈 𝚂𝙴𝙽𝙳 /shazam"""
+    LYRICS_TXT = """<b>𝙻𝚈𝚁𝙸𝙲𝚂 𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙴 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+- 𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙴 𝙰 𝙻𝚈𝚁𝙸𝙲, 𝙳𝙾𝙽'𝚝 𝚂𝙴𝙰𝚁𝙲𝙷 𝙵𝙾𝚁 𝙾𝚃𝙷𝙴𝚁 𝙱𝙾𝚃 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙰𝙻𝙻 𝙸𝙽 𝙾𝙽𝙴 𝙱𝙾𝚃
+<b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳</b>
+- /lyrics [𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴] - 𝚃𝙾 𝙶𝙴𝚃 𝚃𝙷𝙴 𝙻𝚈𝚁𝙸𝙲𝚂
+<b>𝚄𝚂𝙰𝙶𝙴</b>
+- 𝙲𝙰𝙽 𝙱𝙴 𝚄𝚂𝙴𝙳 𝙱𝚈 𝙴𝚅𝙴𝚁𝚈 𝙾𝙽𝙴
+- 𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙸𝙽 𝙱𝙾𝚃 𝙿𝙼
+<b>𝙱𝚄𝙶</b>
+𝚂𝙾𝙼𝙴𝚃𝙸𝙼𝙴𝚂 𝙸𝚃 𝚆𝙸𝙻𝙻 𝚂𝙷𝙾𝚆 𝙰𝙽 𝙴𝚁𝚁𝙾𝚁!"""
+    IP_TXT = """<b>𝙸𝙿 𝙰𝙳𝙳𝚁𝙴𝚂𝚂 𝙵𝙸𝙽𝙳𝙴𝚁 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+- 𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙳𝙴𝚃𝙰𝙸𝙻𝚂 𝙾𝙵 𝙰 𝙸𝙿 𝙰𝙳𝙳𝚁𝙴𝚂𝚂 𝚄𝚂𝙴 𝚃𝙷𝙴 𝙼𝙾𝙳𝚄𝙻𝙴
+<b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳</b>
+- /ip [𝙸𝙿 𝙰𝙳𝙳𝚁𝙴𝚂𝚂]
+- ex /ip 192.180.0.1"""
+    WIKI_TXT = """☞𝚆𝙸𝙺𝙸𝙿𝙴𝙳𝙸𝙰 𝙼𝙾𝙳𝚄𝙻𝙴☜
+    
+<b>𝙱𝚈 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚈𝙾𝚄 𝙲𝙰𝙽 𝙶𝙴𝚃 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽 𝙵𝚁𝙾𝙼 𝚆𝙸𝙺𝙸𝙿𝙴𝙳𝙸𝙰</b>
+
+  <b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
+
+/wiki 𝚘𝚛 /wikipedia {𝚈𝙾𝚄𝚁_𝚃𝙸𝚃𝚃𝙻𝙴}"""
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 
-<b>𝙱𝚈 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝚃𝙾𝚁𝙴 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙰𝙽𝙳 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄 𝙰 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺  𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝚃𝙷𝙴 𝚂𝙰𝚅𝙴𝙳 𝙵𝙸𝙻𝙴𝚂.𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰 𝙿𝚄𝙱𝙻𝙸𝙲 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝙵𝙸𝙻𝚆 𝙻𝙸𝙽𝙺 𝙾𝙽𝙻𝚈  𝙾𝚁 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰  𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚈𝙾𝚄 𝙼𝚄𝚂𝚃 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽 𝚃𝙷𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝙵𝙸𝙻𝙴𝚂...//</b>
+<b> 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝚃𝙾𝚁𝙴 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙰𝙽𝙳 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄 𝙰 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺  𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝚃𝙷𝙴 𝚂𝙰𝚅𝙴𝙳 𝙵𝙸𝙻𝙴𝚂.𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰 𝙿𝚄𝙱𝙻𝙸𝙲 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝙵𝙸𝙻𝚆 𝙻𝙸𝙽𝙺 𝙾𝙽𝙻𝚈  𝙾𝚁 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰  𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚈𝙾𝚄 𝙼𝚄𝚂𝚃 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽 𝚃𝙷𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝙵𝙸𝙻𝙴𝚂...//</b>
 
 ⪼ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞 ›
 
@@ -24,11 +76,9 @@ class script(object):
 
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
 
-<code>/batch https://t.me/MWUpdatez/3 https://t.me/MWUpdatez/8</code>
-
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/MWUpdatez><b>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</b></a>"""
+<code>/batch https://t.me/LunaSupports/3 https://t.me/LunaSupports/8</code>"""
     WHOIS_TXT ="""<b>WHOIS MODULE</b>
-Note:- Give a user details
+Note:- 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄𝚁 𝙳𝙴𝚃𝙰𝙸𝙻𝚂
 •/whois :-give a user full details"""
     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
     
@@ -39,20 +89,12 @@ Note:- Give a user details
 3. /Runs - 𝚂𝙾𝙼𝙴 𝚁𝙰𝙽𝙳𝙾𝙼 𝙳𝙸𝙰𝙻𝙾𝙶𝚄𝙴𝚂 
 4. /Goal or /Shoot - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙰 𝙶𝙾𝙰𝙻 𝙾𝚁 𝚂𝙷𝙾𝙾𝚃
 5. /luck or /cownd - 𝚂𝙿𝙸𝙽 𝙰𝙽𝙳 𝚃𝚁𝚈 𝚈𝙾𝚄𝚁 𝙻𝚄𝙲𝙺"""
-    DEPLOY_TXT = """<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?</b> 
-  
-<b>✮ Deploy Tutorial ››</b> <i><b>https://youtu.be/kB9TkCs8cX0</b></i>
+    MANUELFILTER_TXT = """𝙷𝙴𝙻𝙿: <b>𝙼𝙰𝙽𝚄𝙴𝙻𝙵𝙸𝙻𝚃𝙴𝚁</b>
 
-<b>𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙷𝙴 𝙰𝙹𝙰𝚇-𝙿𝚁𝙾-𝙼𝙰𝚇 𝚁𝙴𝙿𝙾 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 <a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a></b>
-
-<b>𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴</b>
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/MWUpdatez><b>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</b></a>"""
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
-
-- Filter is the feature were users can set automated replies for a particular keyword and ᗩᒍᗩ᙭  will respond whenever a keyword is found the message
+- Filter is the feature were users can set automated replies for a particular keyword and LUNA will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. ᗩᒍᗩ᙭ should have admin privillage.
+1. lilly should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -61,17 +103,19 @@ Note:- Give a user details
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
+    YTSEARCH_TXT = """<b>𝚈𝚃 𝚅𝙸𝙳𝙴𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
 
-<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚂𝙾𝙽𝙶 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂../</b>
+<b>𝚈𝚃 𝚅𝙸𝙳𝙴𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾 𝚅𝙾𝙸𝙲𝙴 𝙰𝙽𝙳 𝙱𝙶𝙼 𝙻𝙸𝙺𝙴 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂../</b>
+
+<b>𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙸𝙽𝙶 𝚅𝙸𝙳𝙴𝙾𝚂 𝙰𝙽𝙳 𝚂𝙾𝙽𝙶𝚂 𝚆𝙸𝚃𝙷 𝙷𝙴𝙻𝙿 𝙾𝙵 𝚈𝙾𝚄𝚃𝚄𝙱𝙴</b>
 
 <b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
 
-››  /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
+››  /search 𝚂𝙴𝙰𝚁𝙲𝙷𝙸𝙽𝙶 𝙽𝙰𝙼𝙴 
 
 𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/OpusTechz>𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉</a>"""
+"""
     PIN_TXT ="""<b>PIN MODULE</b>
 <b>𝙿𝙸𝙽 𝙰 𝙼𝙴𝚂𝚂𝙰𝙶𝙴../</b>
 
@@ -95,7 +139,7 @@ Paste some texts or documents on a website!
 • These commands can be used by any group member."""
     TTS_TXT = """Help: <b> TTS 🎤 module:</b>
 
-Translate text to speech
+𝚃𝚁𝙰𝙽𝚂𝙻𝙰𝚃𝙴 𝚃𝙴𝚇𝚃 𝚃𝙾 𝚂𝙿𝙴𝙴𝙲𝙷
 
 <b>Commands and Usage:</b>
 
@@ -103,21 +147,21 @@ Translate text to speech
 
 <b>NOTE:</b>
 
-• IMDb should have admin privillage.
+• lilly should have admin privillage.
 • These commands works on both pm and group.
-• IMDb can translate texts to 200+ languages."""
+• lilly can translate texts to 200+ languages."""
     PINGS_TXT ="""<b>🌟 Ping:</b>
 
-Helps you to know your ping 🚶🏼‍♂️
+𝙷𝙴𝙻𝙿𝚂 𝚃𝙾 𝚈𝙾𝚄 𝙺𝙽𝙾𝚆𝚂 𝚈𝙾𝚄𝚁 𝙿𝙸𝙽𝙶 🚶🏼‍♂️
 
 <b>Commands:</b>
 
 • /alive - To check you are alive.
-• /help - To get help.
+• /commands - To get help.
 • /ping - To get your ping.
 • /repo - Source Code.
 • /channel - Channel Details.
-• /ajax - Bot Link.
+• /luna - Bot Link.
 <b>🏹Usage🏹 :</b>
 
 • This commands can be used in pms and groups
@@ -129,18 +173,17 @@ Do as you wish with telegra.ph module!
 
 </b>USAGE:</b>
 
-🤧 /telegraph - Send me Picture or Vide Under (5MB)
+🌹 /telegraph 𝚘𝚛 /tgraph 𝚘𝚛 /tmedia- 𝚂𝙴𝙽𝙳 𝙼𝙴 𝙿𝙸𝙲𝚃𝚄𝚁𝙴 𝙾𝚁 𝚅𝙸𝙳𝙴𝙾 𝚄𝙽𝙳𝙴𝚁 (5𝙼𝙱)
 
 <b>NOTE:</b>
 
 • This Command Is Available in goups and pms
 • This Command Can be used by everyone"""
 
-    PRIVATEBOT_TXT = """<b>𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙱𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄</b>
-<b>›› 𝙳𝙾 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝙰 𝙱𝙾𝚃 𝚂𝙰𝙼𝙴 𝙻𝙸𝙺𝙴 𝚃𝙷𝙸𝚂</b>
-<b>›› 𝚆𝙸𝚃𝙷 𝙰𝙻𝙻 𝚈𝙾𝚄𝚁 𝙲𝚁𝙴𝙳𝙸𝚃𝚂</b>
-<b>›› 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽𝙴𝚁𝚂𝙷𝙸𝙿</b>
-<b>›› 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴 <a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a></b>"""
+    PRIVATEBOT_TXT = """<b>›› 𝙲𝙾𝙼𝙴 𝚃𝙾 𝙼𝚈 𝙿𝙼.</b>
+<b>›› [ᏞᏆᏞᏞᎽ](https://graph.org/file/c220fae7eb1baab2df1f0.mp4) 𝙸𝚂 𝙽𝙾𝚃 𝙾𝙿𝙴𝙽 𝚂𝙾𝚄𝚁𝙲𝙴 𝙿𝚁𝙾𝙹𝙴𝙲𝚃.</b>
+<b>›› 𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴 𝙳𝙰𝚈.</b>
+<b>›› 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 <a href=https://t.me/doctor6689>♨️ᎠϴᏟͲϴᎡ♨️</a></b>"""
 
     JSON_TXT ="""<b>JSON:</b>
 
@@ -157,43 +200,41 @@ Group Support
 Everyone can use this command , if spaming happens bot will automatically ban you from the group."""
     PURGE_TXT = """<b>Purge</b>
     
-Delete A Lot Of Messages From Groups! 
+𝙳𝙴𝙻𝙴𝚃𝙴 𝙻𝙾𝚃 𝙾𝙵 𝙼𝙴𝚂𝚂𝙰𝙶𝙴𝚂 𝙵𝚁𝙾𝙼 𝙶𝚁𝙾𝚄𝙿! 
     
  <b>ADMIN</b> 
 
 ◉ /purge :- Delete All Messages From The Replied To Message, To The Current Message"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
--ᗩᒍᗩ᙭  Supports both url and alert inline buttons.
+-LILLY Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. ᗩᒍᗩ᙭ supports buttons with any telegram media type.
+2. LILLY supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/MWUpdatez)</code>
+<code>[Button Text](buttonurl:https://t.me/Tamil_moviesdaa)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
     AUTOFILTER_TXT = """<b>𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙾𝙽/𝙾𝙵𝙵 𝙼𝙾𝙳𝚄𝙻𝙴..</b>
 
-<b>𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝚂 𝚃𝙷𝙴 𝙵𝙴𝙰𝚃𝚄𝚁𝙴 𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙰𝙽𝙳 𝚂𝙰𝚅𝙴  𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙸𝙲𝙰𝙻𝙻𝚈 𝙵𝚁𝙾𝙼 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙶𝚁𝙾𝚄𝙿. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙴 𝙵𝙾𝙻𝙻𝙾𝚆𝙸𝙽𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝚃𝙾 𝙾𝙽 𝙰𝙽𝙳 𝙾𝙵𝙵 𝚃𝙷𝙴 𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿.../</b>
+<b>𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝚂 𝚃𝙷𝙴 𝙵𝙴𝙰𝚃𝚄𝚁𝙴 𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙰𝙽𝙳 𝚂𝙰𝚅𝙴  𝚃𝙷?? 𝙵𝙸𝙻𝙴𝚂 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙸𝙲𝙰𝙻𝙻𝚈 𝙵𝚁𝙾𝙼 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙶𝚁𝙾𝚄𝙿. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙴 𝙵𝙾𝙻𝙻𝙾𝚆𝙸𝙽𝙶 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝚃𝙾 𝙾𝙽 𝙰𝙽𝙳 𝙾𝙵𝙵 𝚃𝙷𝙴 𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿.../</b>
 
 <b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 :-
 <b>›› /autofilter on - 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿𝚂.</b>
 <b>›› /autofilter off - 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁 𝙸𝙽 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿𝚂.</b>
 <b>›› /set_template - 𝚂𝙴𝚃 𝙲𝚄𝚂𝚃𝙾𝙼 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙵𝙾𝚁 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.</b>
-<b>›› /get_template - 𝙶𝙴𝚃 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙾𝙵 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.</b>
-
-<b>𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/OpusTechz>𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉</a></b>"""
+<b>›› /get_template - 𝙶𝙴𝚃 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙾𝙵 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.</b>"""
     CONNECTION_TXT = """Help: <b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
 - it helps to avoid spamming in groups.
 
 <b>NOTE:</b>
-1. Only admins can add a connection.
+1. 𝙾𝙽𝙻𝚈 𝙰𝙳𝙼𝙸𝙽𝚂 𝙲𝙰𝙽 𝙰𝙳𝙳 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽.
 2. Send <code>/connect</code> for connecting me to ur PM
 
 <b>Commands and Usage:</b>
@@ -203,7 +244,7 @@ Delete A Lot Of Messages From Groups!
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of ᗩᒍᗩ᙭ 
+𝚃𝙷𝙴𝚂𝙴 𝙰𝚁𝙴 𝙴𝚇𝚃𝚁𝙰 𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂 𝙾𝙵 
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
@@ -213,7 +254,7 @@ these are the extra features of ᗩᒍᗩ᙭
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
-This module only works for my admins
+𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝙾𝙽𝙻𝚈 𝚆𝙾𝚁𝙺𝚂 𝙵𝙾𝚁 𝙼𝚈 𝙰𝙳𝙼𝙸𝙽𝚂
 
 <b>Commands and Usage:</b>
 • /logs - <code>to get the rescent errors</code>
@@ -227,21 +268,26 @@ This module only works for my admins
 • /unban_user  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """<b>᚛› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code></b>
-<b>᚛› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code></b>
-<b>᚛› 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code></b>
-<b>᚛› 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>
-<b>᚛› 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝙱</b>"""
-    LOG_TEXT_G = """#𝐍𝐞𝐰𝐆𝐫𝐨𝐮𝐩
+    STATUS_TXT = """
+█▀ ▀█▀ ▄▀█ ▀█▀ █▀
+▄█ ░█░ █▀█ ░█░ ▄█
+<b>★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂:</b> <code>{}</code>
+<b>★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂:</b> <code>{}</code>
+<b>★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂:</b> <code>{}</code>
+<b>★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴:</b> <code>{}</code> 𝙼𝚒𝙱
+<b>★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴:</b> <code>{}</code> 𝙼𝚒𝙱"""
+    DEVELOPER_TXT = """<b>𝙾𝚄𝚁 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂</b>
+𝙶𝚄𝚈𝚂"""
+    LOG_TEXT_G = """ΝᎬᏔᏀᎡϴႮᏢ
     
-<b>᚛› 𝐆𝐫𝐨𝐮𝐩 ⪼ {}(<code>{}</code>)</b>
-<b>᚛› 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ <code>{}</code></b>
-<b>᚛› 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ⪼ {}</b>
+<b>★ 𝐆𝐫𝐨𝐮𝐩 ⪼ {}(<code>{}</code>)</b>
+<b>★ 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ⪼ <code>{}</code></b>
+<b>★ 𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ⪼ {}</b>
 """
-    LOG_TEXT_P = """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
+    LOG_TEXT_P = """ΝᎬᏔႮՏᎬᎡ
     
-<b>᚛› 𝐈𝐃 - <code>{}</code></b>
-<b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
+<b>★ 𝐈𝐃 - <code>{}</code></b>
+<b>★ 𝐍𝐚𝐦𝐞 - {}</b>
 """
     REPORT_TXT = """➤ 𝐇𝐞𝐥𝐩: Rᴇᴘᴏʀᴛ ⚠️
 
@@ -271,18 +317,18 @@ This module only works for my admins
 ➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
 
 ➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
-<code>/short https://youtu.be/kB9TkCs8cX0</code>"""
+<code>/short https://youtu.be/CPuvm126KPA</code>"""
 
     VIDEO_TXT ="""𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
 
 • 𝘜𝘴𝘢𝘨𝘦
-𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
+𝚈𝙾𝚄 𝙲𝙰𝙽 𝙳𝙾𝚆𝙽𝙻𝙾𝙳𝙴 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴
 
 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/kB9TkCs8cX0)
+• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/9RVhig3kH3E)
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
-<code>/mp4 https://youtu.be/kB9TkCs8cX0</code>
-<code>/video https://youtu.be/kB9TkCs8cX0</code>"""
+<code>/mp4 https://youtu.be/CPuvm126KPA</code>
+<code>/video https://youtu.be/CPuvm126KPA</code>"""
 
     ZOMBIES_TXT = """𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙺𝙸𝙲𝙺 𝚄𝚂𝙴𝚁𝚂
 
@@ -301,17 +347,15 @@ This module only works for my admins
 
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
 
-➪ 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺 𝗂𝗆𝖺𝗀𝖾 𝗍𝗈 𝖾𝖽𝗂𝗍 ✨
-
-𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/MWUpdatez>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</a>"""
+➪ 𝙹𝚄𝚂𝚃 𝚂𝙴𝙽𝙳 𝙼𝙴 𝙰 𝙸𝙼𝙰𝙶𝙴 𝚃𝙾 𝙴𝙳𝙸𝚃 ✨"""
 
     STICKER_TXT = """𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.
 • 𝐔𝐒𝐀𝐆𝐄
-To Get Sticker ID
+𝚃𝙾 𝙶𝙴𝚃 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝙸𝙳
  
   ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
- 
-◉ Reply To Any Sticker [/stickerid]"""
+
+◉ 𝚁𝚎𝚙𝚕𝚊𝚢 𝚝𝚘 𝚜𝚝𝚒𝚌𝚔𝚎𝚛 [/stickerid]"""
 
     YTTHUMB_TXT = """𝙷𝙴𝙻𝙿𝚂 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝚅𝙸𝙳𝙴𝙾 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻
     
@@ -319,7 +363,7 @@ To Get Sticker ID
 𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
 
 • 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
-<code>/ytthumb https://youtu.be/UyzJ9KEoU0w</code>"""
+<code>/ytthumb https://youtu.be/CPuvm126KPA</code>"""
 
     ABOOK_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖠𝗎𝖽𝗂𝗈𝖻𝗈𝗈𝗄
 
@@ -364,19 +408,19 @@ To Get Sticker ID
  • 𝗆 = 𝗆𝗂𝗇𝗎𝗍𝖾𝗌
  • 𝗁 = 𝗁𝗈𝗎𝗋𝗌
  • 𝖽 = 𝖽𝖺𝗒𝗌"""
-    CREATOR_REQUIRED = """❗<b>You have To Be The Group Creator To Do That.</b>"""
+    CREATOR_REQUIRED = """❗<b>𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 𝚃𝙾 𝙱𝙴 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿 𝙲𝚁𝙴𝙰𝚃𝙴𝚁 𝚃𝙾 𝙳𝙾 𝚃𝙷𝙰𝚃.</b>"""
       
-    INPUT_REQUIRED = "❗ **Arguments Required**"
+    INPUT_REQUIRED = "❗ **𝙰𝚁𝙶𝚄𝙼𝙴𝙽𝚃𝚂 𝚁𝙴𝚀𝚄𝙸𝚁𝙴𝙳**"
       
-    KICKED = """✔️ Successfully Kicked {} Members According To The Arguments Provided."""
+    KICKED = """✔️ 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙺𝙸𝙲𝙺𝙴𝙳 {} 𝙼𝙴𝙼𝙱𝙴𝚁𝚂 𝙰𝙲𝙲𝙾𝚁𝙳𝙸𝙽𝙶 𝚃𝙾 𝚃𝙷𝙴 𝙰𝚁𝙶𝚄𝙼𝙴𝙽𝚃𝚂 𝙿𝚁𝙾𝚅𝙸𝙳𝙴𝙳."""
       
-    START_KICK = """🚮 Removing Inactive Members This May Take A While..."""
+    START_KICK = """💔 𝚁𝙴𝙼𝙾𝚅𝙸𝙽𝙶 𝙸𝙽𝙰𝙲𝚃𝙸𝚅𝙴 𝙼𝙴𝙼𝙱𝙴𝚁𝚂 𝚃𝙷𝙸𝚂 𝙼𝙰𝚈 𝚃𝙰𝙺𝙴 𝙰 𝚆𝙷𝙸𝙻𝙴..."""
       
-    ADMIN_REQUIRED = """❗<b>എന്നെ Admin ആക്കത്ത സ്ഥലത്ത് ഞാൻ നിക്കില്ല പോകുവാ Bii..Add Me Again with all admin rights.</b>"""
+    ADMIN_REQUIRED = """❗<b>𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙸'𝙼 𝙽𝙾𝚃 𝙶𝙾𝙸𝙽𝙶 𝙰𝙽𝚈𝚆𝙷𝙴𝚁𝙴 𝙱𝙸𝙸..𝙰𝙳𝙳 𝙼𝙴 𝙰𝙶𝙰𝙸𝙽 𝚆𝙸𝚃𝙷 𝙰𝙻𝙻 𝙰𝙳𝙼𝙸𝙽 𝚁𝙸𝙶𝙷𝚃𝚂.</b>"""
       
-    DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
+    DKICK = """✔️  𝙺𝙸𝙲𝙺𝙴𝙳 {} 𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝙰𝙲𝙲𝙾𝚄𝙽𝚃𝚂 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈."""
       
-    FETCHING_INFO = """<b>ഇപ്പൊ എല്ലാം അടിച്ചുമാറ്റി തരാം...</b>"""
+    FETCHING_INFO = """<b>𝙽𝙾𝚆 𝙸 𝙲𝙰𝙽 𝙱𝙴𝙰𝚃 𝙴𝚅𝙴𝚁𝚈𝚃𝙷𝙸𝙽𝙶😈...</b>"""
       
-    STATUS = """{}\n<b>Chat Member Status</b>**\n\n```<i>Recently``` - {}\n```Within Week``` - {}\n```Within Month``` - {}\n```Long Time Ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}</i>
+    STATUS = """{}\n<b>𝙲𝙷𝙰𝚃 𝙼𝙴𝙼𝙱𝙴𝚁 𝚂𝚃𝙰𝚃𝚄𝚂</b>**\n\n```<i>𝚁𝙴𝙲𝙴𝙽𝚃𝙻𝚈``` - {}\n```𝚆𝙸𝚃𝙷𝙸𝙽 𝚆𝙴𝙰𝙺``` - {}\n```𝚆𝙸𝚃𝙷𝙸𝙽 𝙼𝙾𝙽𝚃𝙷``` - {}\n```𝙻𝙾𝙽𝙶 𝚃𝙸𝙼𝙴 𝙰𝙶𝙾``` - {}\n𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝙰𝙲𝙲𝙾𝚄𝙽𝚃 - {}\n𝙱𝙾𝚃 - {}\n𝚄𝙽𝙲𝙰𝙲𝙷𝙴𝙳 - {}</i>
 """
