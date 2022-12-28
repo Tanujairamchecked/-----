@@ -745,13 +745,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ᏟᎻᎪΝΝᎬᏞ', url='https://t.me/MWUpdatez'),
-            InlineKeyboardButton('ႮᏢᎠᎪͲᎬՏ', url='https://t.me/OpusTechz')
+            InlineKeyboardButton('ՏᎬᎪᎡᏟᎻ ᎷϴᏙᏆᎬՏ🔍', switch_inline_query_current_chat='')
             ],[      
-            InlineKeyboardButton('ᎻᎬᏞᏢ', callback_data='help'),
-            InlineKeyboardButton('ᎪᏴϴႮͲ', callback_data='about')
+            InlineKeyboardButton('ᏟϴᎷᎷᎪΝᎠՏ ❔', callback_data='commands')
+            ],[
+            InlineKeyboardButton('ᎪᏴϴႮͲ  ᎷᎽ ՏᎽՏͲᎬᎷ 🤖', callback_data='about')
+            ],[
+            InlineKeyboardButton('ᏟᏞϴՏᎬ💤', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -789,109 +791,83 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "help":
+    elif query.data == "commands":
         buttons = [[
-            InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
-            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct')
+            InlineKeyboardButton('Mᴀɴᴜᴇʟ ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('Aᴜᴛᴏ-Fɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴs', callback_data='coct')
             ],[
-            InlineKeyboardButton('𝚂𝙾𝙽𝙶', callback_data='songs'),
-            InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰', callback_data='extra'),
-            InlineKeyboardButton("𝚅𝙸𝙳𝙴𝙾", callback_data='video')
+            InlineKeyboardButton('𝚃-𝚃-𝚂🎤', callback_data='ttss'),
+            InlineKeyboardButton('Exᴛʀᴀ🧵', callback_data='extra'),
+            InlineKeyboardButton("Vɪᴅᴇᴏ📽️", callback_data='video')
             ],[
-            InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin'), 
-            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
-            InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image')
+            InlineKeyboardButton('Pɪɴ📌', callback_data='pin'), 
+            InlineKeyboardButton('Pᴀsᴛᴇ💌', callback_data='pastes'),
+            InlineKeyboardButton("Iᴍᴀɢᴇ🧩", callback_data='image')
             ],[
-            InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
-            InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')
+            InlineKeyboardButton('Fᴜɴ🎊', callback_data='fun'), 
+            InlineKeyboardButton('Jsᴏɴ📟', callback_data='son'),
+            InlineKeyboardButton('ΝᎬՏͲ', callback_data='e'),                  
             ],[
-            InlineKeyboardButton('𝙿𝚄𝚁𝙶𝙴', callback_data='purges'),
-            InlineKeyboardButton('𝙿𝙸𝙽𝙶', callback_data='pings'),
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele')
-            ],[
-            InlineKeyboardButton('𝚆𝙷𝙾𝙸𝚂', callback_data='whois'),
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies')
-            ],[
-            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
-            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb'),
-            InlineKeyboardButton('𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳', callback_data='sticker')
-            ],[
-            InlineKeyboardButton('𝙲𝙾𝚅𝙸𝙳', callback_data='corona'),
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
-            InlineKeyboardButton('𝚄𝚁𝙻-𝚂𝙷𝙾𝚁𝚃', callback_data='urlshort')
-            ],[
-            InlineKeyboardButton('𝙶-𝚃𝚁𝙰𝙽𝚂', callback_data='gtrans'),
-            InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
-            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
-            ],[
-            InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?', callback_data='deploy')
-            ],[
-            InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='start')
+            InlineKeyboardButton('ᏴᎪᏟᏦ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=script.COMMANDS_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "hellp":
+    elif query.data == "e":
         buttons = [[
-            InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
-            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct')
+            InlineKeyboardButton('Pᴜʀɢᴇ🗑️', callback_data='purges'),
+            InlineKeyboardButton('Pɪɴɢ✨', callback_data='pings'),
+            InlineKeyboardButton('Tᴇʟᴇɢʀᴀᴘʜ📇', callback_data='tele')
             ],[
-            InlineKeyboardButton('𝚂𝙾𝙽𝙶', callback_data='songs'),
-            InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰', callback_data='extra'),
-            InlineKeyboardButton("𝚅𝙸𝙳𝙴𝙾", callback_data='video')
+            InlineKeyboardButton('Wʜᴏɪs💫', callback_data='whois'),
+            InlineKeyboardButton('Mᴜᴛᴇ🔇', callback_data='restric'),
+            InlineKeyboardButton('Kɪᴄᴋ🐾', callback_data='zombies')
             ],[
-            InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin'), 
-            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
-            InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image')
+            InlineKeyboardButton('Rᴇᴘᴏʀᴛ❗', callback_data='report'),
+            InlineKeyboardButton('Cᴏʀᴏɴᴀ🦠', callback_data='corona'),  
+            InlineKeyboardButton('Sᴛɪᴄᴋᴇʀ-Iᴅ🦹', callback_data='sticker')
             ],[
-            InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
-            InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')
-            ],[
-            InlineKeyboardButton('𝙿𝚄𝚁𝙶𝙴', callback_data='purges'),
-            InlineKeyboardButton('𝙿𝙸𝙽𝙶', callback_data='pings'),
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele')
-            ],[
-            InlineKeyboardButton('𝚆𝙷𝙾𝙸𝚂', callback_data='whois'),
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies')
-            ],[
-            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
-            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb'),
-            InlineKeyboardButton('𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳', callback_data='sticker')
-            ],[
-            InlineKeyboardButton('𝙲𝙾𝚅𝙸𝙳', callback_data='corona'),
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
-            InlineKeyboardButton('𝚄𝚁𝙻-𝚂𝙷𝙾𝚁𝚃', callback_data='urlshort')
-            ],[
-            InlineKeyboardButton('𝙶-𝚃𝚁𝙰𝙽𝚂', callback_data='gtrans'),
-            InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
-            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
-            ],[
-            InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?', callback_data='deploy')
-            ],[
-            InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='start')
+            InlineKeyboardButton('ᏴᎪᏟᏦ', callback_data='commands'),
+            InlineKeyboardButton('Uʀʟ-ᴍɪssɪᴏɴ⌛', callback_data='urlshort'),
+            InlineKeyboardButton('ΝᎬՏͲ', callback_data='f')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.answer("𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗆𝗒 𝖧𝖾𝗅𝗉 𝗆𝗈𝖽𝗎𝗅𝖾")
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=script.E_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "f":
+        buttons = [[
+            InlineKeyboardButton('G-Tʀᴀɴs🌐', callback_data='gtrans'),
+            InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇs📁', callback_data='newdata'),
+            InlineKeyboardButton('Sᴛᴀᴛᴜs🗽', callback_data='stats')
+            ],[
+            InlineKeyboardButton('Wɪᴋɪ-Iɴғᴏʀᴍᴀᴛɪᴠᴇ📄', callback_data='wiki'),
+            InlineKeyboardButton('Iᴘ♨️Aᴅᴅʀᴇss📱', callback_data='ipaddress'),
+            InlineKeyboardButton('Lʏʀɪᴄs📝', callback_data='lyric')
+            ],[
+            InlineKeyboardButton('Sᴏɴɢs🎶', callback_data='song'),
+            InlineKeyboardButton('𝙿ᴀss_Gᴇɴ♟️', callback_data='passgen'),
+            InlineKeyboardButton('𝚂-Tᴇsᴛ✒️', callback_data='font')
+            ],[
+            InlineKeyboardButton('Aᴜᴅɪᴏ-sʏsᴛᴇᴍ📣', callback_data='abook'),
+            InlineKeyboardButton('Sʜᴀʀᴇ_Tᴇsᴛ➡️', callback_data='sharetxt'),
+            InlineKeyboardButton('ᏴᎪᏟᏦ', callback_data='e')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.F_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ ՏϴႮᎡᏟᎬ ♥️', url='https://t.me/AboutAadhi')
-            ],[
-            InlineKeyboardButton('🏠 ᎻϴᎷᎬ 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 ᏟᏞϴՏᎬ 🔐', callback_data='close_data')
+            InlineKeyboardButton('ᏴᎪᏟᏦ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
